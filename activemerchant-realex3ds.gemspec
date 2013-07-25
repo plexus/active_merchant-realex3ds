@@ -5,7 +5,7 @@ require 'rubygems'
 Gem::Specification.new do |s|
   s.platform     = Gem::Platform::RUBY
   s.name         = 'activemerchant-realex3ds'
-  s.version      = '1.0.0'
+  s.version      = '1.0.1'
   s.summary      = 'Realex gateway for ActiveMerchant with 3D Secure support'
   s.description  = 'Realex is the leading payment provider for Ireland. The default gateway included in ActiveMerchant does not support 3D Secure. This implementation does, it was sponsored by Ticketsolve, written by David Rice, and released as a gem for the current version of ActiveMerchant by Arne Brasseur.'
 
@@ -18,6 +18,8 @@ Gem::Specification.new do |s|
   s.files            = `git ls-files`.split($/)
   s.test_files       = `git ls-files -- spec`.split($/)
   s.extra_rdoc_files = %w[README.md]
+
+  s.license = 'MIT'
 
   s.add_dependency('activemerchant', '~> 1.34')
 
